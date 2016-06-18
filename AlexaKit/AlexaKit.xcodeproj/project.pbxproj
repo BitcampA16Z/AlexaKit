@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BCEC7901D15F55200E32F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC78F1D15F55200E32F7E /* AppDelegate.swift */; };
+		3BCEC7921D15F55200E32F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC7911D15F55200E32F7E /* ViewController.swift */; };
+		3BCEC7951D15F55200E32F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC7931D15F55200E32F7E /* Main.storyboard */; };
+		3BCEC7971D15F55200E32F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC7961D15F55200E32F7E /* Assets.xcassets */; };
+		3BCEC79A1D15F55200E32F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC7981D15F55200E32F7E /* LaunchScreen.storyboard */; };
+		3BCEC7A81D15F58C00E32F7E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC7A71D15F58C00E32F7E /* IntentHandler.swift */; };
+		3BCEC7B11D15F58C00E32F7E /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEC7B01D15F58C00E32F7E /* IntentsUI.framework */; };
+		3BCEC7B41D15F58C00E32F7E /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC7B31D15F58C00E32F7E /* IntentViewController.swift */; };
+		3BCEC7B71D15F58C00E32F7E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC7B51D15F58C00E32F7E /* MainInterface.storyboard */; };
+		3BCEC7BB1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3BCEC7AE1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BCEC7BE1D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3BCEC7A51D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BCEC7C71D15FA5E00E32F7E /* AlexaKitSendMessageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC7C61D15FA5E00E32F7E /* AlexaKitSendMessageIntentHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BCEC7B91D15F58C00E32F7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCEC7841D15F55200E32F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCEC7AD1D15F58C00E32F7E;
+			remoteInfo = AlexaKitSiriKitExtensionUI;
+		};
+		3BCEC7BC1D15F58C00E32F7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCEC7841D15F55200E32F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCEC7A41D15F58C00E32F7E;
+			remoteInfo = AlexaKitSiriKitExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BCEC7C51D15F58C00E32F7E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3BCEC7BB1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex in Embed App Extensions */,
+				3BCEC7BE1D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3BCEC78C1D15F55200E32F7E /* AlexaKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexaKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC78F1D15F55200E32F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BCEC7911D15F55200E32F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BCEC7941D15F55200E32F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BCEC7961D15F55200E32F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BCEC7991D15F55200E32F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BCEC79B1D15F55200E32F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEC7A51D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlexaKitSiriKitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC7A71D15F58C00E32F7E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3BCEC7A91D15F58C00E32F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEC7AE1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlexaKitSiriKitExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC7B01D15F58C00E32F7E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		3BCEC7B31D15F58C00E32F7E /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		3BCEC7B61D15F58C00E32F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3BCEC7B81D15F58C00E32F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEC7C61D15FA5E00E32F7E /* AlexaKitSendMessageIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexaKitSendMessageIntentHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BCEC7891D15F55200E32F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7A21D15F58C00E32F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7AB1D15F58C00E32F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC7B11D15F58C00E32F7E /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BCEC7831D15F55200E32F7E = {
+			isa = PBXGroup;
+			children = (
+				3BCEC78E1D15F55200E32F7E /* AlexaKit */,
+				3BCEC7A61D15F58C00E32F7E /* AlexaKitSiriKitExtension */,
+				3BCEC7B21D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI */,
+				3BCEC7AF1D15F58C00E32F7E /* Frameworks */,
+				3BCEC78D1D15F55200E32F7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BCEC78D1D15F55200E32F7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC78C1D15F55200E32F7E /* AlexaKit.app */,
+				3BCEC7A51D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex */,
+				3BCEC7AE1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BCEC78E1D15F55200E32F7E /* AlexaKit */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC78F1D15F55200E32F7E /* AppDelegate.swift */,
+				3BCEC7911D15F55200E32F7E /* ViewController.swift */,
+				3BCEC7931D15F55200E32F7E /* Main.storyboard */,
+				3BCEC7961D15F55200E32F7E /* Assets.xcassets */,
+				3BCEC7981D15F55200E32F7E /* LaunchScreen.storyboard */,
+				3BCEC79B1D15F55200E32F7E /* Info.plist */,
+			);
+			path = AlexaKit;
+			sourceTree = "<group>";
+		};
+		3BCEC7A61D15F58C00E32F7E /* AlexaKitSiriKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC7A71D15F58C00E32F7E /* IntentHandler.swift */,
+				3BCEC7A91D15F58C00E32F7E /* Info.plist */,
+				3BCEC7C61D15FA5E00E32F7E /* AlexaKitSendMessageIntentHandler.swift */,
+			);
+			path = AlexaKitSiriKitExtension;
+			sourceTree = "<group>";
+		};
+		3BCEC7AF1D15F58C00E32F7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC7B01D15F58C00E32F7E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BCEC7B21D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC7B31D15F58C00E32F7E /* IntentViewController.swift */,
+				3BCEC7B51D15F58C00E32F7E /* MainInterface.storyboard */,
+				3BCEC7B81D15F58C00E32F7E /* Info.plist */,
+			);
+			path = AlexaKitSiriKitExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BCEC78B1D15F55200E32F7E /* AlexaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEC79E1D15F55200E32F7E /* Build configuration list for PBXNativeTarget "AlexaKit" */;
+			buildPhases = (
+				3BCEC7881D15F55200E32F7E /* Sources */,
+				3BCEC7891D15F55200E32F7E /* Frameworks */,
+				3BCEC78A1D15F55200E32F7E /* Resources */,
+				3BCEC7C51D15F58C00E32F7E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCEC7BA1D15F58C00E32F7E /* PBXTargetDependency */,
+				3BCEC7BD1D15F58C00E32F7E /* PBXTargetDependency */,
+			);
+			name = AlexaKit;
+			productName = AlexaKit;
+			productReference = 3BCEC78C1D15F55200E32F7E /* AlexaKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BCEC7A41D15F58C00E32F7E /* AlexaKitSiriKitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEC7C21D15F58C00E32F7E /* Build configuration list for PBXNativeTarget "AlexaKitSiriKitExtension" */;
+			buildPhases = (
+				3BCEC7A11D15F58C00E32F7E /* Sources */,
+				3BCEC7A21D15F58C00E32F7E /* Frameworks */,
+				3BCEC7A31D15F58C00E32F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlexaKitSiriKitExtension;
+			productName = AlexaKitSiriKitExtension;
+			productReference = 3BCEC7A51D15F58C00E32F7E /* AlexaKitSiriKitExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3BCEC7AD1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEC7BF1D15F58C00E32F7E /* Build configuration list for PBXNativeTarget "AlexaKitSiriKitExtensionUI" */;
+			buildPhases = (
+				3BCEC7AA1D15F58C00E32F7E /* Sources */,
+				3BCEC7AB1D15F58C00E32F7E /* Frameworks */,
+				3BCEC7AC1D15F58C00E32F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlexaKitSiriKitExtensionUI;
+			productName = AlexaKitSiriKitExtensionUI;
+			productReference = 3BCEC7AE1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BCEC7841D15F55200E32F7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Colin King";
+				TargetAttributes = {
+					3BCEC78B1D15F55200E32F7E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 33QFCS9J52;
+						DevelopmentTeamName = "Colin King (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					3BCEC7A41D15F58C00E32F7E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 33QFCS9J52;
+						DevelopmentTeamName = "Colin King (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					3BCEC7AD1D15F58C00E32F7E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 33QFCS9J52;
+						DevelopmentTeamName = "Colin King (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3BCEC7871D15F55200E32F7E /* Build configuration list for PBXProject "AlexaKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BCEC7831D15F55200E32F7E;
+			productRefGroup = 3BCEC78D1D15F55200E32F7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BCEC78B1D15F55200E32F7E /* AlexaKit */,
+				3BCEC7A41D15F58C00E32F7E /* AlexaKitSiriKitExtension */,
+				3BCEC7AD1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BCEC78A1D15F55200E32F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC79A1D15F55200E32F7E /* LaunchScreen.storyboard in Resources */,
+				3BCEC7971D15F55200E32F7E /* Assets.xcassets in Resources */,
+				3BCEC7951D15F55200E32F7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7A31D15F58C00E32F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7AC1D15F58C00E32F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC7B71D15F58C00E32F7E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCEC7881D15F55200E32F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC7921D15F55200E32F7E /* ViewController.swift in Sources */,
+				3BCEC7901D15F55200E32F7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7A11D15F58C00E32F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC7A81D15F58C00E32F7E /* IntentHandler.swift in Sources */,
+				3BCEC7C71D15FA5E00E32F7E /* AlexaKitSendMessageIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC7AA1D15F58C00E32F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC7B41D15F58C00E32F7E /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BCEC7BA1D15F58C00E32F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCEC7AD1D15F58C00E32F7E /* AlexaKitSiriKitExtensionUI */;
+			targetProxy = 3BCEC7B91D15F58C00E32F7E /* PBXContainerItemProxy */;
+		};
+		3BCEC7BD1D15F58C00E32F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCEC7A41D15F58C00E32F7E /* AlexaKitSiriKitExtension */;
+			targetProxy = 3BCEC7BC1D15F58C00E32F7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BCEC7931D15F55200E32F7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC7941D15F55200E32F7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BCEC7981D15F55200E32F7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC7991D15F55200E32F7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BCEC7B51D15F58C00E32F7E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC7B61D15F58C00E32F7E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BCEC79C1D15F55200E32F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BCEC79D1D15F55200E32F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BCEC79F1D15F55200E32F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlexaKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3BCEC7A01D15F55200E32F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlexaKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3BCEC7C01D15F58C00E32F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexaKitSiriKitExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit.AlexaKitSiriKitExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3BCEC7C11D15F58C00E32F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexaKitSiriKitExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit.AlexaKitSiriKitExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3BCEC7C31D15F58C00E32F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexaKitSiriKitExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit.AlexaKitSiriKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3BCEC7C41D15F58C00E32F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexaKitSiriKitExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.colinking.AlexaKit.AlexaKitSiriKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCEC7871D15F55200E32F7E /* Build configuration list for PBXProject "AlexaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC79C1D15F55200E32F7E /* Debug */,
+				3BCEC79D1D15F55200E32F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCEC79E1D15F55200E32F7E /* Build configuration list for PBXNativeTarget "AlexaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC79F1D15F55200E32F7E /* Debug */,
+				3BCEC7A01D15F55200E32F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BCEC7BF1D15F58C00E32F7E /* Build configuration list for PBXNativeTarget "AlexaKitSiriKitExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC7C01D15F58C00E32F7E /* Debug */,
+				3BCEC7C11D15F58C00E32F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BCEC7C21D15F58C00E32F7E /* Build configuration list for PBXNativeTarget "AlexaKitSiriKitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC7C31D15F58C00E32F7E /* Debug */,
+				3BCEC7C41D15F58C00E32F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BCEC7841D15F55200E32F7E /* Project object */;
+}
